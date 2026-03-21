@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+
+  /* Hide everything */
+  body * {
+    visibility: hidden;
+  }
+
+  /* Show ONLY resume */
+  .resume-print,
+  .resume-print * {
+    visibility: visible;
+  }
+
+  /* Position resume correctly */
+  .resume-print {
+    position: absolute;
+    left: 2mm;
+    top: 2mm;
+    width: 210mm;
+    min-height: 297mm;
+  }
+
+}
+
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
