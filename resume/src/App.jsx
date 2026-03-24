@@ -5,8 +5,9 @@ import Skills from "./components/skills";
 import Experience from "./components/experience";
 import Education from "./components/education";
 import Certifications from "./components/certifications";
-import Preview from "./components/preview";
 import TemplateOne from "./preview/TemplateOne";
+import TemplateTwo from "./preview/TemplateTwo";
+import TemplateThree from "./preview/TemplateThree";
 import { useRef } from "react";
 
 
@@ -164,9 +165,9 @@ const handlePrint = () => {
               onChange={(e) => setTemplate(e.target.value)}
               className="bg-gray-200 text-black px-4 py-2 rounded-lg outline-2 cursor-pointer hover:bg-gray-300"
             >
-              <option value="template1">Template 1</option>
-              <option value="template2">Template 2</option>
-              <option value="template3">Template 3</option>
+              <option value="template1">Classic ATS</option>
+              <option value="template2">Premium Sidebar</option>
+              <option value="template3">ATS Minimal</option>
             </select>
 
             <select
@@ -272,18 +273,41 @@ const handlePrint = () => {
           {/* RIGHT */}
           <div className="w-3/5 h-full bg-gray-200 p-6 overflow-y-auto space-y-2">
 
-            {template === "template1" && <TemplateOne 
-              ref={previewRef}
-              theme={theme}
-              headerData={headerData}
-              summaryData={summaryData}
-              skillsData={skillsData}
-              experienceData={experienceData}
-              educationData={educationData}
-              certificationsData={certificationsData} />}
+            {template === "template1" && ( <TemplateOne 
+                ref={previewRef}
+                theme={theme}
+                headerData={headerData}
+                summaryData={summaryData}
+                skillsData={skillsData}
+                experienceData={experienceData}
+                educationData={educationData}
+                certificationsData={certificationsData}
+              />
+            )}
 
-            {template === "template2" && <TemplateTwo {...props} />}
-            {template === "template3" && <TemplateThree {...props} />}
+            {template === "template2" && ( <TemplateTwo 
+                ref={previewRef}
+                theme={theme}
+                headerData={headerData}
+                summaryData={summaryData}
+                skillsData={skillsData}
+                experienceData={experienceData}
+                educationData={educationData}
+                certificationsData={certificationsData}
+              />
+            )}
+
+            {template === "template3" && ( <TemplateThree 
+                ref={previewRef}
+                theme={theme}
+                headerData={headerData}
+                summaryData={summaryData}
+                skillsData={skillsData}
+                experienceData={experienceData}
+                educationData={educationData}
+                certificationsData={certificationsData}
+              />
+            )}
           </div>
     
         </div>
