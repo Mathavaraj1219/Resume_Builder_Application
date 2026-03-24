@@ -19,8 +19,7 @@ const TemplateOne = forwardRef(({
         className="resume-print bg-white px-16 py-10 print:px-6 print:py-10"
         style={{
           width: "210mm",
-          height: "297mm",  
-          overflow: "hidden"  
+          height: "297mm"
         }}
       >
 

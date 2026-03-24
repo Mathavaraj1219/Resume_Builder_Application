@@ -19,8 +19,7 @@ const TemplateThree = forwardRef(({
         className="resume-print bg-white px-16 py-10 print:px-6 print:py-10 text-gray-900"
         style={{
           width: "210mm",
-          height: "297mm",
-          overflow: "hidden"
+          height: "297mm"
         }}
       >
 
@@ -39,6 +38,8 @@ const TemplateThree = forwardRef(({
             <span>{headerData.linkedin}</span>
             <span>|</span>
             <span>{headerData.github}</span>
+            <span>|</span>
+            <span>{headerData.portfolio}</span>
           </div>
         </div>
 
@@ -55,7 +56,7 @@ const TemplateThree = forwardRef(({
         {/* SKILLS (Inline style - ATS friendly) */}
         <div className="mb-4">
           <h2 style={{ borderColor: theme.borderColor, color: theme.headingColor }} className="text-sm font-bold uppercase tracking-wide border-b pb-1">
-            Skills
+            Techanical Skills
           </h2>
           <p className="text-sm mt-2">
             {skillsData.skills.join("  |  ")}

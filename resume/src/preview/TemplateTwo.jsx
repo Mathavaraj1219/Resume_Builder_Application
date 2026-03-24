@@ -19,8 +19,7 @@ const TemplateTwo = forwardRef(({
         className="resume-print bg-white flex"
         style={{
           width: "210mm",
-          height: "297mm",
-          overflow: "hidden"
+          height: "297mm"
         }}
       >
 
@@ -46,7 +45,7 @@ const TemplateTwo = forwardRef(({
           {/* SKILLS */}
           <div className="mt-4">
             <h2 className="font-bold border-b pb-1 border-white">
-              Skills
+              Techanical Skills
             </h2>
             <ul className="mt-2 text-sm list-disc ml-4">
               {skillsData.skills.map((skill, i) => (
